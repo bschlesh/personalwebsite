@@ -1,23 +1,13 @@
 import './App.css';
-import Particles from './components/Particles.jsx'
-
-const styles = {
-  root: {
-    fontFamily: "sans-serif",
-    textAlign: "center",
-    height: "100%",
-    background: "#222",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
-  }
-};
+import PageHeader from './components/PageHeader';
+import AboutContainer from "./components/AboutContainer";
 
 function App() {
   return (
-      <div style={styles.root}>
-        <Particles />
-      </div>
+    <div>
+        <PageHeader />
+        <AboutContainer />
+    </div>
   );
 }
 

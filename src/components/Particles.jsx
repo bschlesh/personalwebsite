@@ -32,7 +32,7 @@ class Canvas extends Component {
                             }
                         },
                         color: {
-                            value: "#ffffff"
+                            value: "#00f61e"
                         },
                         shape: {
                             type: "circle",
@@ -69,7 +69,7 @@ class Canvas extends Component {
                         line_linked: {
                             enable_auto: true,
                             distance: 100,
-                            color: "#fff",
+                            color: "#00f61e",
                             opacity: 1,
                             width: 1,
                             condensed_mode: {
