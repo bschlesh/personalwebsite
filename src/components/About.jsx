@@ -1,35 +1,27 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+import '../css/components/About.css';
+import { Paper } from '@material-ui/core';
 
-const useStyles = makeStyles({
-    root: {
-        minWidth: 475,
-        backgroundColor: 'rgb(119,59,59, 0.3)'
-    },
-    title: {
-        fontSize: 30,
-    },
-    pos: {
-        marginBottom: 12,
-    },
-});
-
-export default function SimpleCard() {
-    const classes = useStyles();
-
-    return (
-        <Card className={classes.root}>
-            <CardContent style={{ textAlign: 'center' }}>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Hi, I'm Brett!
-                </Typography>
-                <Typography variant="body1" component="p">
-                    Computer Scientist, Athlete, Innovator.
-                </Typography>
-            </CardContent>
-        </Card>
-    );
-}
+export default class About extends React.Component {
+    render(){
+        return (
+            <div id="about-me-container" className="about-me-container">
+                <h2 id="about-me-header" className="about-me-header">
+                    About Me
+                </h2>
+                <Paper variant="elevation" square>
+                    <p id="about-me-text" className="about-me-text">
+                        Hello! I'm Brett, a Cornell University student studying Computer Science and Business. <br />
+                        I enjoy data science and front-end web development. Here are some fun facts about me:
+                    </p>
+                    <ul id="fun-facts-list" className="fun-facts-list">
+                        <li>I have travelled to 19 countries.</li>
+                        <li>I have a cute dog named Grady.</li>
+                        <li>I love making cold brew, and I'm on a mission for the perfect recipe. </li>
+                        <li>I enjoy fitness and I work out quite frequently - some might say it's an addiction. </li>
+                    </ul>
+                </Paper>
+            </div>
+        );
+    };
+};

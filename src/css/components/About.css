@@ -1,0 +1,11 @@
+div.about-me-container {
+    display: block;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+}
+
+p.about-me-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}

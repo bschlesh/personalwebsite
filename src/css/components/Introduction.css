@@ -1,0 +1,43 @@
+div.intro-container {
+    min-height: 30vh;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.welcome {
+    z-index: 1;
+    position: absolute;
+    background-size: cover;
+    background-color: #8B8B8B;
+    border-radius: 30px;
+}
+
+h1.welcome-name {
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+p.welcome-text {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+canvas {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    opacity: 0;
+    /*animation: fadeInRight .3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;*/
+}

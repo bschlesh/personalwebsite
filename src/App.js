@@ -1,12 +1,16 @@
-import './App.css';
+import './css/App.css';
 import PageHeader from './components/PageHeader';
-import AboutContainer from "./components/AboutContainer";
+import Introduction from "./components/Introduction";
+import About from "./components/About";
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
   return (
     <div>
         <PageHeader />
-        <AboutContainer />
+        <Introduction />
+        <About />
+        {/*<WorkExperience />*/}
     </div>
   );
 }
