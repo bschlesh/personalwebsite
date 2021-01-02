@@ -1,0 +1,112 @@
+{
+  "main": {
+    "name":"Brett Schlesinger",
+    "occupation":"Cornell University student",
+    "description":"I am studying Computer Science and Business, and am passionate about data science and front-end web development",
+    "image":"profilepic.jpg",
+    "bio":"I am a Computer Science student with a passion for data analytics and simplistic application designs. In my free time, I enjoy cooking, reading, and fitness.",
+    "contactmessage":"Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
+    "email": "bgs59@cornell.edu",
+    "phone": "843-384-9725",
+    "address":{
+      "street":"8 Greenhill Street",
+      "city":"Charleston",
+      "state":"SC",
+      "zip": "29401"
+    },
+    "website": "http://www.brettschlesinger.me",
+    "resumedownload":"https://www.dropbox.com/s/sl73v5zkp0vmwsv/brettresumeupdatedNOV2020.pdf?dl=0",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/brett-schlesinger-a30522174/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/brettschlesh12",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/bschlesh",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"",
+    "education":[
+      {
+        "school":"Cornell University",
+        "degree":"Computer Science, Business",
+        "graduated":"May 2023",
+        "description":""
+      }
+    ],
+    "work":[
+      {
+        "company":"Student Agencies Inc.",
+        "title":"Chief Technology Officer",
+        "years":"December 2020 - Present",
+        "description":""
+      },
+      {
+        "company":"Kroll Bond Rating Agency",
+        "title":"Quantitative Modeling Intern",
+        "years":"September 2020 - January 2021",
+        "description":""
+      },
+      {
+        "company":"Kroll Bond Rating Agency",
+        "title":"Residential Mortgage-Backed Securities (RMBS) Intern",
+        "years":"July 2020 - August 2020",
+        "description":""
+      }
+    ],
+    "skills":[
+      {
+        "name":"Git",
+        "level":"60%"
+      },
+      {
+        "name":"Python",
+        "level":"80%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"60%"
+      },
+      {
+        "name":"CSS",
+        "level":"60%"
+      },
+      {
+        "name":"HTML5",
+        "level":"60%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Resume Website",
+        "category":"A React based resume website template",
+        "image":"resume-website.jpg",
+        "url":"http://www.brettschlesinger.me"
+      }
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user":"Kareem Abdul Jabbar"
+      },
+      {
+        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user":"Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}
