@@ -1,10 +1,32 @@
 import React, { Component } from 'react';
+import {withStyles} from "@material-ui/core";
+import { Button, Grid } from "@material-ui/core";
+
+const StyledButton = withStyles({
+    root: {
+        justifyContent: "center",
+        background: "#a93333",
+        border: 0,
+        height: 50,
+        margin: "5px",
+        padding: "10px",
+        boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+        font: 'opensans-bold',
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: "white",
+    },
+    label: {
+        textTransform: "capital",
+    },
+})(Button);
 
 class Resume extends Component {
   render() {
 
     if(this.props.data){
       var skillmessage = this.props.data.skillmessage;
+      // var resumeDownload = this.props.data.resumedownload;
       var education = this.props.data.education.map(function(education){
         return <div key={education.school}><h3>{education.school}</h3>
         <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
@@ -20,6 +42,7 @@ class Resume extends Component {
         var className = 'bar-expand '+skills.name.toLowerCase();
         return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
       })
+
     }
 
     return (
@@ -71,6 +94,21 @@ class Resume extends Component {
 				</div>
 			</div>
       </div>
+
+          <div className="row download">
+              <Grid
+                  container
+                  spacing={16}
+                  direction="column"
+                  alignItems="center"
+                  justify="center">
+                  <a href="https://www.dropbox.com/s/sl73v5zkp0vmwsv/brettresumeupdatedNOV2020.pdf?dl=0">
+                      <StyledButton className="download-button">
+                          Download Resume
+                      </StyledButton>
+                  </a>
+          </Grid>
+          </div>
    </section>
     );
   }

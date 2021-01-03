@@ -12,9 +12,8 @@
    d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
+   g. Contact Section
+   h. Footer
 
 ===================================================================== */
 
@@ -95,7 +94,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #a93333; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -194,7 +193,7 @@ ul#nav li.current a { color: #a93333; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #a93333; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -212,23 +211,23 @@ ul#nav li.current a { color: #a93333; }
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
-#about .download {
-   width: 58.33333%;
-   padding-top: 6px;
-}
+/*#about .download {*/
+/*   width: 58.33333%;*/
+/*   padding-top: 6px;*/
+/*}*/
 #about .main-col { padding-right: 5%; }
-#about .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
-}
-#about .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
+/*#about .download .button {*/
+/*   margin-top: 6px;*/
+/*   background: #444;*/
+/*}*/
+/*#about .download .button:hover {*/
+/*   background: #fff;*/
+/*   color: #2B2B2B;*/
+/*}*/
+/*#about .download .button i {*/
+/*   margin-right: 15px;*/
+/*   font-size: 20px;*/
+/*}*/
 
 
 /* ------------------------------------------------------------------ */
@@ -242,7 +241,7 @@ ul#nav li.current a { color: #a93333; }
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
+#resume a, #resume a:visited  { color: #a93333; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
@@ -251,7 +250,7 @@ ul#nav li.current a { color: #a93333; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #a93333;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -279,6 +278,22 @@ ul#nav li.current a { color: #a93333; }
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+#resume .download {
+   width: 23.3333%;
+   padding-top: 6px;
+   justify: center;
+}
+#resume .download .download-button {
+   margin-top: 6px;
+}
+#resume .download .download-button:hover {
+   background: #444;
+   color: #fdfdfd;
+}
+#resume .download .download-button i {
+   margin-right: 15px;
+   font-size: 15px;
 }
 
 /*----------------------------------------------*/
@@ -324,93 +339,6 @@ ul#nav li.current a { color: #a93333; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
-/*
-.git {
-  	-moz-animation: git 2s ease;
-  	-webkit-animation: git 2s ease;
-}
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
-}
-.css {
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
-}
-.html5 {
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
-}
-
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes reactjs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -558,7 +486,7 @@ ul#nav li.current a { color: #a93333; }
    letter-spacing: 3px;
    cursor: pointer;
 }
-.popup-modal a:hover {	color: #00CCCC; }
+.popup-modal a:hover {	color: #a93333; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
@@ -639,70 +567,6 @@ call-to-action .button {
 	font-family: 'opensans-semibold', sans-serif;
 	color: #D8D8D8;
 }
-
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
-
-   position: relative;
-   min-height: 200px;
-   width: 100%;
-   overflow: hidden;
-}
-#testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
-}
-#testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#testimonials h1 span { display: none; }
-#testimonials .header-col { padding-top: 9px; }
-#testimonials .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f10d";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-   margin: 0 0px 30px 0px;
-   padding-left: 0;
-   position: relative;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#testimonials blockquote:before { content: none; }
-#testimonials blockquote p {
-   font-family: 'librebaskerville-italic', serif;
-   padding: 0;
-   font-size: 24px;
-   line-height: 48px;
-   color: #fff
-}
-#testimonials blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-   color: #fff;
-}
-#testimonials blockquote cite:before { content: "\2014 \0020"; }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */
@@ -801,7 +665,7 @@ call-to-action .button {
 }
 #contact .section-head { margin-bottom: 42px; }
 
-#contact a, #contact a:visited  { color: #11ABB0; }
+#contact a, #contact a:visited  { color: #a93333; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
@@ -862,7 +726,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #a93333;
 }
 #contact button.submit {
 	text-transform: uppercase;
@@ -881,7 +745,7 @@ call-to-action .button {
 	background: #fff;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #a93333;
 	font-size: 13px;
 }
 #message-warning, #message-success {
@@ -893,7 +757,7 @@ call-to-action .button {
    margin-left: 26%;
 }
 #message-warning { color: #D72828; }
-#message-success { color: #11ABB0; }
+#message-success { color: #18bf0a; }
 
 #message-warning i,
 #message-success i {
@@ -905,26 +769,6 @@ call-to-action .button {
    left: 18px;
    top: 17px;
 }
-
-
-/* Twitter Feed */
-#twitter {
-   margin-top: 12px;
-   padding: 0;
-}
-#twitter li {
-   margin: 6px 0px 12px 0;
-   line-height: 30px;
-}
-#twitter li span {
-   display: block;
-}
-#twitter li b a {
-   font: 13px/36px 'opensans-regular', Sans-serif;
-   color: #474747 !important;
-   border: none;
-}
-
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
@@ -956,15 +800,6 @@ footer .copyright li {
 .ie footer .copyright li {
    display: inline;
 }
-footer .copyright li:before {
-    content: "\2022";
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #095153;
-}
-footer .copyright  li:first-child:before {
-    display: none;
-}
 
 /* social links */
 footer .social-links {
@@ -977,7 +812,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #a93333;
 }
 
 footer .social-links li:first-child { margin-left: 0; }

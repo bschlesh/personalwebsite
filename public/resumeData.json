@@ -5,7 +5,7 @@
     "description":"I am studying Computer Science and Business, and am passionate about data science and front-end web development",
     "image":"profilepic.jpg",
     "bio":"I am a Computer Science student with a passion for data analytics and simplistic application designs. In my free time, I enjoy cooking, reading, and fitness.",
-    "contactmessage":"Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
+    "contactmessage":"Hey there! I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
     "email": "bgs59@cornell.edu",
     "phone": "843-384-9725",
     "address":{
@@ -90,22 +90,10 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
+        "title":"Portfolio Website",
+        "category":"A React based portfolio website",
         "image":"resume-website.jpg",
         "url":"http://www.brettschlesinger.me"
-      }
-    ]
-  },
-  "testimonials":{
-    "testimonials":[
-      {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
-      },
-      {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
       }
     ]
   }
