@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 
 class Header extends Component {
   render() {
@@ -21,6 +22,7 @@ class Header extends Component {
     return (
       <header id="home">
         <nav id="nav-wrap">
+
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
@@ -29,37 +31,67 @@ class Header extends Component {
           </a>
 
           <ul id="nav" className="nav">
-            <li className="current">
-              <a className="smoothscroll" href="#home">
+            <li className="nav-item">
+              <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+              >
                 Home
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="smoothscroll" href="#about">
+            <li className="nav-item">
+              <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+              >
                 About
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="smoothscroll" href="#resume">
+            <li className="nav-item">
+              <Link
+                  activeClass="active"
+                  to="resume"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+              >
                 Resume
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="smoothscroll" href="#portfolio">
+            <li className="nav-item">
+              <Link
+                  activeClass="active"
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+              >
                 Work
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className="smoothscroll" href="#contact">
+            <li className="nav-item">
+              <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">Hi, I'm {name}.</h1>
+            <h1 className="responsive-headline">I'm {name}.</h1>
             <h3>
               I'm a <span>{occupation}</span> based in {city}. {description}.
             </h3>
@@ -69,9 +101,15 @@ class Header extends Component {
         </div>
 
         <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
-          </a>
+          <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+          >
+            <i className="icon-down-circle" />
+          </Link>
         </p>
       </header>
     );

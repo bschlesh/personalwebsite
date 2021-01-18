@@ -9,6 +9,7 @@
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
     "react-scripts": "1.0.17",
+    "react-scroll": "^1.8.1",
     "react-spinners": "^0.10.4"
   },
   "scripts": {
