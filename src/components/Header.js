@@ -84,6 +84,9 @@ class Header extends Component {
             <Typist cursor={{ show: false }}>
               <h1>Hi, I'm Brett.</h1>
             </Typist>
+            <Typist cursor={{ show: false }}>
+              <h2>Engineer, Athlete, Bold Thinker.</h2>
+            </Typist>
             <hr />
             <ul className="social">{networks}</ul>
           </div>
