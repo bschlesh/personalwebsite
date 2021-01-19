@@ -104,14 +104,14 @@ header .banner {
 header .banner-text { width: 100%; }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #913434;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #ffffff;
+   color: #a93333;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -139,8 +139,8 @@ header .social li {
    margin: 0 15px;
    padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #a93333; }
+header .social li a { color: #a93333; }
+header .social li a:hover { color: #FFFFFF; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -187,9 +187,6 @@ header .scrolldown a:hover { color: #a93333; }
 }
 .opaque { background-color: #333; }
 
-/* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
-
 ul#nav {
    min-height: 48px;
    width: auto;
@@ -227,7 +224,7 @@ ul#nav li a {
 /*ul#nav li.current a { color: #a93333; }*/
 
 ul#nav li > .active {
-   border-bottom: 2px solid #ea0f0f;
+   border-bottom: 2px solid #a93333;
 }
 
 

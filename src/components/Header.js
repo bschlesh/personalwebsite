@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
+import Typist from "react-typist";
 
 class Header extends Component {
   render() {
     if (this.props.data) {
-      var name = this.props.data.name;
-      var occupation = this.props.data.occupation;
-      var description = this.props.data.description;
-      var city = this.props.data.address.city;
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
@@ -22,14 +19,6 @@ class Header extends Component {
     return (
       <header id="home">
         <nav id="nav-wrap">
-
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-            Show navigation
-          </a>
-          <a className="mobile-btn" href="#home" title="Hide navigation">
-            Hide navigation
-          </a>
-
           <ul id="nav" className="nav">
             <li className="nav-item">
               <Link
@@ -91,10 +80,10 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
-            <h3>
-              I'm a <span>{occupation}</span> based in {city}. {description}.
-            </h3>
+            {/*<h1 className="responsive-headline">Hi, I'm Brett.</h1>*/}
+            <Typist cursor={{ show: false }}>
+              <h1>Hi, I'm Brett.</h1>
+            </Typist>
             <hr />
             <ul className="social">{networks}</ul>
           </div>
