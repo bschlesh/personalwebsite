@@ -39,7 +39,7 @@
         "school":"Cornell University",
         "degree":"Computer Science, Business",
         "graduated":"May 2023",
-        "description":"A junior at Cornell University studying Computer Science with a minor in Business, with an intention to focus on Artificial Intelligence."
+        "description":"A junior studying Computer Science with a minor in Business, with an intention to focus on Artificial Intelligence."
       }
     ],
     "work":[
@@ -47,19 +47,19 @@
         "company":"Student Agencies Inc.",
         "title":"Chief Technology Officer",
         "years":"December 2020 - Present",
-        "description":"As CTO at SAI, I am responsible for overseeing all technical operations for the company, including but not limited to: website development, software subscriptions, Salesforce oversight."
+        "description":"Responsible for overseeing all technical operations for the company, including but not limited to: website development, software subscriptions, Salesforce oversight."
       },
       {
         "company":"Kroll Bond Rating Agency",
         "title":"Quantitative Modeling Intern",
         "years":"September 2020 - January 2021",
-        "description":"An intern with KBRA's QM team, working on the reimplementation of the RMBS model, written in Python and React."
+        "description":"Worked on a reimplementation of the RMBS model, written in Python and React."
       },
       {
-        "company":"Kroll Bond Rating Agency",
+        "company":"",
         "title":"Residential Mortgage-Backed Securities Intern",
         "years":"July 2020 - August 2020",
-        "description":"As an analyst intern with the RMBS group, I was able to implement an automation solution for the team using Django and React, while also completing a pool memo and presenting for a mock rating committee."
+        "description":" Implemented an automation solution for the team using Django and React, while also completing a pool memo and presenting for a mock rating committee."
       }
     ],
     "skills":[

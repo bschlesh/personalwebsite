@@ -80,12 +80,11 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            {/*<h1 className="responsive-headline">Hi, I'm Brett.</h1>*/}
             <Typist cursor={{ show: false }}>
               <h1>Hi, I'm Brett.</h1>
             </Typist>
             <Typist cursor={{ show: false }}>
-              <h2>Engineer, Athlete, Bold Thinker.</h2>
+              <h2>Full Stack Web Developer.</h2>
             </Typist>
             <hr />
             <ul className="social">{networks}</ul>

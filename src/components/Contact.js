@@ -1,9 +1,50 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
+import emailjs from "emailjs-com";
+import{ init } from 'emailjs-com';
+init("user_QhN7AOkbSQErquYt1FIaq");
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    buttonMessage: "Submit"
+  };
+  handleSubmit(e) {
+    e.preventDefault();
+    const { name, email, subject, message } = this.state;
+    let templateParams = {
+      name: name,
+      from_name: email,
+      to_name: 'Brett',
+      subject: subject,
+      message: message,
+    };
+    emailjs.send(
+      "service_7ck9lie",
+      "template_4gradre",
+      templateParams,
+      "user_QhN7AOkbSQErquYt1FIaq"
+    );
+    this.setState({buttonMessage: "Thank You!"});
+    this.resetForm();
+  }
+  resetForm() {
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      buttonMessage: "Submit"
+    });
+  }
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value });
+  };
+
   render() {
     if (this.props.data) {
-      // var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
 
@@ -23,7 +64,11 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
+            <form
+              onSubmit={this.handleSubmit.bind(this)}
+              id="contactForm"
+              name="contactForm"
+            >
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -31,11 +76,11 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue=""
+                    value={this.state.name}
                     size="35"
                     id="contactName"
                     name="contactName"
-                    onChange={this.handleChange}
+                    onChange={this.handleChange.bind(this, "name")}
                   />
                 </div>
                 <div>
@@ -44,23 +89,23 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue=""
+                    value={this.state.email}
                     size="35"
                     id="contactEmail"
                     name="contactEmail"
-                    onChange={this.handleChange}
+                    onChange={this.handleChange.bind(this, "email")}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="contactSubject">Subject</label>
+                  <label htmlFor="contactSubject">Subject <span className="required">*</span></label>
                   <input
                     type="text"
-                    defaultValue=""
+                    value={this.state.subject}
                     size="35"
                     id="contactSubject"
                     name="contactSubject"
-                    onChange={this.handleChange}
+                    onChange={this.handleChange.bind(this, "subject")}
                   />
                 </div>
 
@@ -69,27 +114,22 @@ class Contact extends Component {
                     Message <span className="required">*</span>
                   </label>
                   <textarea
+                    value={this.state.message}
                     cols="50"
                     rows="15"
                     id="contactMessage"
                     name="contactMessage"
+                    onChange={this.handleChange.bind(this, "message")}
                   ></textarea>
                 </div>
 
                 <div>
-                  <button className="submit">Submit</button>
-                  <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
-                  </span>
+                  <button className="submit" type="submit">
+                    {this.state.buttonMessage}
+                  </button>
                 </div>
               </fieldset>
             </form>
-
-            <div id="message-warning"> Error boy</div>
-            <div id="message-success">
-              <i className="fa fa-check"></i>Your message was sent, thank you!
-              <br />
-            </div>
           </div>
         </div>
       </section>
